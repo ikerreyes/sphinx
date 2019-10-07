@@ -30,21 +30,10 @@ To use the *quickstart* follow these steps:
 
 
    Sphinx asks you how to set up the initial configuration.
-   Few changes (at least) to the default options are suggested::
+   It is recommended to separate source and build directories.
 
-      Separate source and build directories (y/n) [n]: y
-
-      autodoc: automatically insert docstrings from modules (y/n) [n]: y
-
-      intersphinx: link between Sphinx documentation of different projects (y/n) [n]: y
-
-      mathjax: include math, rendered in the browser by MathJax (y/n) [n]: y
-
-      viewcode: include links to the source code of documented Python objects (y/n) [n]: y
-
-   .. warning::
-
-      Do not forget to create a Makefile
+   .. note:: Sphinx 1.X will make quite more questions than 2.X versions
+      in order to decided which extensions to load (that are loaded by default in 2.X version).
 
    After you answer all the questions, Sphinx will create some files for you like a :file:`conf.py`,
    a :file:`Makefile` and a main :file:`.rst` (named *index* if you haven't change it during the setup).

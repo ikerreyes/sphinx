@@ -1,5 +1,5 @@
-.. ProjectDocumentation documentation master file, created by
-   sphinx-quickstart on Fri Nov  4 11:58:08 2016.
+.. Sphinx documentation master file, created by
+   sphinx-quickstart on Mon Oct  7 20:47:18 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -60,3 +60,4 @@ Indices and tables
 
 
 .. _Sphinx: http://www.sphinx-doc.org/
+
