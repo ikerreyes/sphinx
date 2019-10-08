@@ -1,9 +1,9 @@
 
 .. _ipython:
 
-#######
+
 IPython
-#######
+=======
 
 IPython can also be used in your documentation.
 
@@ -25,7 +25,7 @@ Let's see an example:
 |       1+1                 |                       |
 +---------------------------+-----------------------+
 
-********
+
 Enabling
 ********
 
@@ -65,8 +65,9 @@ so the following will work:
 |       np.array([1,2,3])   |                       |
 +---------------------------+-----------------------+
 
+.. important:: The python libraries you expect to use must be available
+   in your environment.
 
-*****
 Using
 *****
 

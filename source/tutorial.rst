@@ -26,7 +26,7 @@ for a Python project.
 
    and open the build files in your browser.
 
-#. Add a new :file:`.rst` file in the **source** directory.
+#. Add a new |rst| file in the **source** directory.
    For now in can contain only one sentence.
 
    Include the file in the ``toctree`` to make it visible.

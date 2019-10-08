@@ -10,6 +10,7 @@ This guide is intended to provide information on
 how to create technical documentation
 for a Python project
 using `Sphinx`_.
+However, `Sphinx`_ can be used to build documents beyond Python projects.
 
 Some considerations taken form
 the `developer guide <https://docs.python.org/devguide/documenting.html>`_:

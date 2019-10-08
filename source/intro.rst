@@ -33,14 +33,15 @@ This language is simple. It basically contains 2 types of structures:
 
       .. note:: A note
 
-Find more details in the `reST markup specification <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_.
+The `reST markup specification <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_
+contains all the reST syntax.
 The *reST* markup is defined in the `docutils project <http://docutils.sourceforge.net/>`_.
 This project includes also a text processor. You can try it online on http://rst.ninjs.org/ .
 However, this project is only for single documents.
 
 `Sphinx`_ compiles and links all the *.rst* files
 to generate the documentation in different formats: *html*, *pdf*, *epub*...
-However, **Sphinx** is not only a tool to process the :file:`.rst` files but also adds
+However, **Sphinx** is not only a tool to process the |rst| files but also adds
 new directives and interpreted text roles.
 One of the most important directives added by Sphinx is the
 `toctree <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html?highlight=toctree#directive-toctree>`_

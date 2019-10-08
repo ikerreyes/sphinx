@@ -1,10 +1,13 @@
+
+.. highlight:: bash
+
 Documenting your project
 ========================
 
 More docs
 ---------
 
-To add more documents to the documentation, add new :file:`.rst` files
+To add more documents to the documentation, add new |rst| files
 to the source directory (or in nested folders).
 Files can also be in other folders, the latter recommendation is just for clarity.
 There are some exceptions as the **readme** file, that is placed directly in the project folder.
@@ -13,7 +16,6 @@ The document structure stats with the masterdoc (:file:`index.rst` by default).
 
 All *.rst* files will be compiled by Sphinx.
 The ones that are not in any `toctree <http://www.sphinx-doc.org/es/stable/markup/toctree.html#the-toc-tree>`_ are not going to be shown.
-
 
 .. note::
 
@@ -40,24 +42,20 @@ To do so, open :file:`docs/source/conf.py` and :ref:`set the path to your code <
    # use the relative path from this file to your project directory
 
 
-Use the following command to generate :file:`.rst` files that will auto-generate the API docs when
-Sphinx builds the docs:
-
-.. code-block:: bash
+Use the following command to generate |rst| files that will auto-generate the API docs when
+Sphinx builds the docs::
 
    $ sphinx-apidoc -f -o docs/source projectdir
 
 .. hint::
    A different output folder can be given to have the documentation for the code separated from other documents.
-   Example:
-
-      .. code-block:: bash
+   Example::
 
          $ sphinx-apidoc -f -o docs/source/pkg projectdir
 
 .. _apidocs modules:
 
-This command will create different *.rst* files. :file:`modules.rst` is the main one, and the one that
+This command will create different |rst| files. :file:`modules.rst` is the main one, and the one that
 should be included in the documentation toctree.
 
 This command does not need to be called with each modification of the docstrings, as they are read automatically.

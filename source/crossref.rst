@@ -7,14 +7,15 @@ Cross referencing Python objects
 When writing your docs, it is usually helpful to have cross references
 to Python objects.
 
-For cross-referencing Python objects, take a look at the `possible roles <http://www.sphinx-doc.org/en/stable/domains.html#cross-referencing-python-objects>`_.
+For cross-referencing Python objects, take a look at the
+`possible roles <http://www.sphinx-doc.org/en/stable/domains.html#cross-referencing-python-objects>`_.
 
 Cross reference syntax takes one of these formats:
 
 - ``:role:`target```
 - ``:role:`title <target>```
 
-Additonally,
+Additionally,
 
 - Prefix the content with ``!`` to avoid creating a link.
 - Prefix the content with ``~`` to the link text will only be the last component of the target.

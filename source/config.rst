@@ -7,6 +7,33 @@ Sphinx behaviour can be modified by making some changes in the
 Here we are going to see some of those possible changes.
 You can find all the details in http://www.sphinx-doc.org/en/stable/config.html.
 
+
+Useful extensions
+-----------------
+
+There are a number of extensions that can be useful for your docs:
+
+- **sphinx.ext.autodoc**: enable to automatically load docs in the code
+  with :ref:`autodoc <autodoc>`
+- **sphinx.ext.intersphinx** (by default): link to other documentations
+  with :ref:`intersphinx <intersphinx>`
+- **sphinx.ext.napoleon** (by default): parse :ref:`Google or Numpy docstring format <google docstrings>`
+- **sphinx.ext.viewcode**: enable to show the code in the API documentation
+- **sphinx.ext.ifconfig**: conditional include of content
+- **sphinx.ext.mathjax** (by default): load math with `MathJax <https://www.mathjax.org/>`_.
+  Alternative, they can be rendered as images with ``sphinx.ext.imgmath``
+- **sphinx.ext.coverage**
+- **sphinx.ext.todo**: enable ``.. todo::`` directives.
+  Content can be shown or hidden using:
+
+  .. code:: python
+
+     # If true, `todo` and `todoList` produce output, else they produce nothing.
+     todo_include_todos = True
+
+
+Find more extension in https://bitbucket.org/birkenfeld/sphinx-contrib/src/default/
+
 .. _autodoc:
 
 Using autodoc
@@ -139,14 +166,13 @@ After installing it, you can build your documentation by::
 Include in all files
 --------------------
 
-Using the ``rst_epilog`` you can include a piece of reST at the end of all source files.
+Using the ``rst_epilog`` (or ``rst_prolog``) you can include a piece of reST at the end of all source files.
 This can be useful for example to add substitutions that you want to be in all files.
 E.g.::
 
     rst_epilog = """
     .. |psf| replace:: Python Software Foundation
     """
-
 
 
 
