@@ -29,7 +29,7 @@ Contents:
    start
    reST-Sphinx
    files
-   extras
+   extras/extras
    summary
 
 
