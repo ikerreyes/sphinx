@@ -27,7 +27,7 @@ Contents:
 
    intro
    start
-   reST-Sphinx
+   syntax/index
    files
    extras/index
    summary
