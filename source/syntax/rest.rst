@@ -212,49 +212,6 @@ The most common ones are the first ones.
 
 
 
-Math
-----
-
-To use `mathematical expressions <http://www.sphinx-doc.org/en/stable/ext/math.html>`_, you can use LaTeX expressions under the
-following directives:
-
-1. ``:math:`<expression>```
-
-   Since Pythagoras, we know that :math:`a^2 + b^2 = c^2`.
-
-   Code::
-
-      Since Pythagoras, we know that :math:`a^2 + b^2 = c^2`.
-
-#. ``.. math::`` directive
-
-   .. math::
-
-      (\prod \limits_{i=1}^n (x_i+1))^{1/n}-1 = \sqrt[n]{(x_1+1)(x_2+1) \cdots (x_n+1)} -1
-
-   Code::
-
-      .. math::
-
-         (\prod \limits_{i=1}^n (x_i+1))^{1/n}-1 = \sqrt[n]{(x_1+1)(x_2+1) \cdots (x_n+1)} -1
-
-
-In Sphinx, ``math`` directives can include an optinal ``label`` which can be used to
-reference a formula (in the same document) using the ``:eq:`` role.
-
-
-+--------------------------------------------+-----------------------------------------+
-| ::                                         |                                         |
-|                                            | .. math:: e^{i\pi} + 1 = 0              |
-|   .. math:: e^{i\pi} + 1 = 0               |    :label: euler                        |
-|      :label: euler                         |                                         |
-|                                            | Euler's identity equation :eq:`euler`,  |
-|   Euler's identity equation :eq:`euler`,   | as elected one of the most              |
-|   as elected one of the most               | beautiful mathematical formulas.        |
-|   beautiful mathematical formulas.         |                                         |
-+--------------------------------------------+-----------------------------------------+
-
-
 Raw
 ----
 

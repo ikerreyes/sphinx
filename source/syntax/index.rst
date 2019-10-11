@@ -29,4 +29,5 @@ More documentation can be found `in the Sphinx page <http://www.sphinx-doc.org/e
    refs
    rest
    sphinx
+   math
    code
