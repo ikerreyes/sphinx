@@ -291,6 +291,21 @@ Control the **size** of brackets and parentheses with:
       -  ``\Bigg \rangle``
 
 
+Create a function with different steps using ``cases``:
+
+
++-------------------------------------------+-------------------------------------+
+| ::                                        |                                     |
+|                                           |     .. math::                       |
+|     .. math::                             |                                     |
+|                                           |        \kappa = \begin{cases}       |
+|        \kappa = \begin{cases}             |        0 & \text{if censored} \\    |
+|        0 & \text{if censored} \\          |        1 & \text{if not censored}   |
+|        1 & \text{if not censored}         |      \end{cases}                    |
+|        \end{cases}                        |                                     |
++-------------------------------------------+-------------------------------------+
+
+
 ----
 
 https://en.wikipedia.org/wiki/Wikipedia:LaTeX_symbols
