@@ -147,8 +147,8 @@ Symbols
       -  ``\Pr``
    *  -  :math:`\neg`
       -  ``\neg``
-      -
-      -
+      -  :math:`A^\intercal`
+      -  ``\intercal``
 
 .. list-table:: Decorators
 
@@ -305,6 +305,23 @@ Create a function with different steps using ``cases``:
 |        \end{cases}                        |                                     |
 +-------------------------------------------+-------------------------------------+
 
+
+Matrix
+------
+
+Matrix can be including in LaTeX with ``array``:
+
++---------------------------------------+---------------------------------------+
+| ::                                    |                                       |
+|                                       |     .. math::                         |
+|     .. math::                         |                                       |
+|                                       |        M=                             |
+|        M=                             |        \left[ {\begin{array}{cc}      |
+|        \left[ {\begin{array}{cc}      |        1 & 2 \\                       |
+|        1 & 2 \\                       |        3 & 4 \\                       |
+|        3 & 4 \\                       |        \end{array} } \right]          |
+|        \end{array} } \right]          |                                       |
++---------------------------------------+---------------------------------------+
 
 ----
 
