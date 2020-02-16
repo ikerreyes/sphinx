@@ -32,7 +32,12 @@ There are a number of extensions that can be useful for your docs:
      todo_include_todos = True
 
 
-Find more extension in https://bitbucket.org/birkenfeld/sphinx-contrib/src/default/
+Find more extension in https://bitbucket.org/birkenfeld/sphinx-contrib/src/default/.
+
+Other extension are:
+
+- copy button for code blocks: https://sphinx-copybutton.readthedocs.io/en/latest/
+
 
 .. _autodoc:
 
@@ -121,12 +126,27 @@ Linking other projects documentation
 Sometimes it is useful to refer to Python objects
 from other projects.
 
-This can be done with the ``intersphinx`` extension
-(Sphinx asks if you want it during the quickstart).
-
+This can be done with the ``intersphinx`` extension.
 
 This extension allows you to refer to projects that
 are added to the :data:`intersphinx_mapping` :obj:`dictionary <dict>`.
+
+The format of each link is::
+
+   name: (target, inventory)
+
+or::
+
+   name: (target, (inventory1, inventory2, ...))
+
+The *name* is the name you want to use to refer to that particular inventory
+as ``:ref:`text <name:label>```, the *target* is the URL (or path) where to redirect
+the links, and the *inventory* is where to find the inventory file.
+
+A value of :obj:`None` in the *inventory* points to the :file:`objects.inv` file
+in the URL (or path) that the *target* points to.
+A different URL (or path) can be indicated, or even a list of inventories
+(as soon as one success, it stops).
 
 For example, to have not only the standard Python documentations, but also
 Numpy, Pandas and Matplotlib do::
@@ -138,6 +158,8 @@ Numpy, Pandas and Matplotlib do::
                'pandas': ('http://pandas-docs.github.io/pandas-docs-travis/', None),
                'matplotlib': ('http://matplotlib.org/', None)
                }
+
+.. note:: Links done by :ref:`domains <crossrefPy>` also work.
 
 .. _config html:
 

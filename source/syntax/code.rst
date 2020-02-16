@@ -117,6 +117,13 @@ From that point on, any code in literal
 blocks will be treated as C code
 until the next ``highlight`` directive modifies it.
 
+The ``highlight`` can include the ``linenothreshold`` option
+that produce line number for code blocks longer than the
+value specified::
+
+    .. highlight:: c
+       :linenothreshold: 5
+
 Also take a look at the `highlight_language
 <http://www.sphinx-doc.org/es/stable/config.html#confval-highlight_language>`_
 variable that can be used in the configuration.
