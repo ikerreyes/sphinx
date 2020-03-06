@@ -13,3 +13,4 @@ do other stuff with Sphinx:
    config
    IPython
    rtd
+   themes
