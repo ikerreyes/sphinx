@@ -86,6 +86,18 @@ A conda environment can be created to install the packages. To do so:
     so you ensure that the correct version is being build.
 
 
+Recently ReadTheDocs have not only added support for ``pyenv``, but also for
+Docker, so it is more easy to use different Python versions.
+You need to update your :file:`readthedocs.yml` file as follow::
+
+    build:
+        image: latest
+
+    python:
+        version: 3.6
+
+More information in this post: https://blog.readthedocs.com/python-36-support/
+
 Using ReadTheDocs HTML theme
 ----------------------------
 
