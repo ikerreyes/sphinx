@@ -150,10 +150,10 @@ options.
 
 Some options that can be used with the *code-block* directive are:
 
-- linenos: to number the lines
-- emphasize-lines:
-- caption:
-- name:
+- *linenos*: to number the lines
+- *emphasize-lines*:
+- *caption*: appears before the code block
+- *name*:
 
 +-----------------------------------+--------------------------------+
 | ::                                |                                |
