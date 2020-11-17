@@ -69,7 +69,8 @@ https://eli.thegreenplace.net/2017/restructuredtext-vs-markdown-for-technical-do
 and
 http://ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/
 
-**Markdown** is designed for the web and you can write HTML is the markup syntax is not enough.
+**Markdown** is designed for the web and you can write HTML
+if the markup syntax is not enough.
 Said that, it also has some issues.
 The main one is probably the *lack of a standard*. There are many different
 `"flavours" <https://github.com/commonmark/CommonMark/wiki/Markdown-Flavors>`_ incompatible between them.

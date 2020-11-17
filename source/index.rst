@@ -12,11 +12,12 @@ for a Python project
 using `Sphinx`_.
 However, `Sphinx`_ can be used to build documents beyond Python projects.
 
-Some considerations taken form
+Some considerations taken from
 the `developer guide <https://docs.python.org/devguide/documenting.html>`_:
 
 - More documentation is not necessarily better documentation.
-- Use a tone respectful of the reader’s intelligence. Don’t talk down to them or waste their time.
+- Use a tone respectful of the reader’s intelligence.
+  Don’t talk down to them or waste their time.
 
 
 Contents:
@@ -48,7 +49,7 @@ for Sphinx.
 
 Further resources:
 
-- Check the `WriteTheDocs documentation guide <http://www.writethedocs.org/guide/>`_
+- `WriteTheDocs documentation guide <http://www.writethedocs.org/guide/>`_
 
 
 
