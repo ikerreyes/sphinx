@@ -4,6 +4,7 @@ README
 
 Documentation related to `Sphinx (document generator) <http://www.sphinx-doc.org/en/master/>`_,
 including syntax details and how to use it.
+See on `RTD <http://ikerdocs-sphinx.rtfd.io/>`_.
 
 Build
 -----
