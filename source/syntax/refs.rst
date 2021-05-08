@@ -8,30 +8,63 @@ Cross references
 Hyperlink text
 --------------
 
-There are different ways to create a `link <http://bg.upf.edu>`_.
+There are different ways to create a `link <https://example.com/>`_.
 
-+-----------------------------------------------+------------------------------------------+
-| ::                                            |                                          |
-|                                               | Citation style `link 1`_.                |
-|    Citation style `link 1`_.                  |                                          |
-|                                               | .. _link 1: http://bg.upf.edu            |
-|    .. _link 1: http://bg.upf.edu              |                                          |
-+-----------------------------------------------+------------------------------------------+
-| ::                                            |                                          |
-|                                               | Inline 1 `link 2 <http://bg.upf.edu>`_.  |
-|    Inline 1 `link 2 <http://bg.upf.edu>`_.    |                                          |
-+-----------------------------------------------+------------------------------------------+
-| ::                                            |                                          |
-|                                               | Inline 2 `<http://bg.upf.edu>`_.         |
-|    Inline 2 `<http://bg.upf.edu>`_.           |                                          |
-+-----------------------------------------------+------------------------------------------+
-| ::                                            |                                          |
-|                                               | Sphinx styple http://bg.upf.edu          |
-|    Sphinx styple http://bg.upf.edu            |                                          |
-+-----------------------------------------------+------------------------------------------+
++-----------------------------------------------+-------------------------------------------+
+| ::                                            |                                           |
+|                                               | Citation style `link 1`_.                 |
+|    Citation style `link 1`_.                  |                                           |
+|                                               | .. _link 1: https://example.com/          |
+|    .. _link 1: https://example.com/           |                                           |
++-----------------------------------------------+-------------------------------------------+
+| ::                                            |                                           |
+|                                               | Inline 1 `link 2 <https://example.com/>`_.|
+|    Inline 1 `link 2 <https://example.com/>`_. |                                           |
++-----------------------------------------------+-------------------------------------------+
+| ::                                            |                                           |
+|                                               | Inline 2 `<https://example.com/>`_.       |
+|    Inline 2 `<https://example.com/>`_.        |                                           |
++-----------------------------------------------+-------------------------------------------+
+| ::                                            |                                           |
+|                                               | Sphinx style https://example.com/         |
+|    Sphinx style https://example.com/          |                                           |
++-----------------------------------------------+-------------------------------------------+
 
-Interal document references
----------------------------
+Anonymous hyperlinks
+********************
+
+`Anonymous hyperlinks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#anonymous-hyperlinks>`_
+allow to circumvent warnings due to duplicated target names.
+They are formed using 2 underscores (``__``) instead of one
+
++------------------------------------------------+---------------------------------------------+
+| ::                                             |                                             |
+|                                                | `anonymous link 1 <https://example.com/>`__ |
+|    `anonymous link 1 <https://example.com/>`__ |                                             |
++------------------------------------------------+---------------------------------------------+
+| ::                                             |                                             |
+|                                                | `anonymous target 2`__                      |
+|    `anonymous target 2`__                      |                                             |
+|                                                | .. __: https://example.com/                 |
+|    .. __: https://example.com/                 |                                             |
++------------------------------------------------+---------------------------------------------+
+| ::                                             |                                             |
+|                                                | `anonymous target 3`__                      |
+|    `anonymous target 3`__                      |                                             |
+|                                                | __ https://example.com/                     |
+|    __ https://example.com/                     |                                             |
++------------------------------------------------+---------------------------------------------+
+
+.. note:: The order of anonymous references and target is important.
+
+The third example is a more convenient alternative for the second case.
+
+.. warning:: It is easy to abuse this feature, and
+   it affects accessibility so use with care.
+
+
+Internal document references
+----------------------------
 
 Use ``.. _label name:`` plus a blank line before any text location.
 
