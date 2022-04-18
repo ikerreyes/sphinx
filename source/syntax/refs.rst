@@ -26,6 +26,13 @@ There are different ways to create a `link <https://example.com/>`_.
 |    Inline 2 `<https://example.com/>`_.        |                                           |
 +-----------------------------------------------+-------------------------------------------+
 | ::                                            |                                           |
+|                                               | Inline and citation combined              |
+|    Inline and citation combined               | `link 3 <my link_>`_.                     |
+|    `link 3 <my link_>`_.                      |                                           |
+|                                               | .. _my link: https://example.com/         |
+|    .. _my link: https://example.com/          |                                           |
++-----------------------------------------------+-------------------------------------------+
+| ::                                            |                                           |
 |                                               | Sphinx style https://example.com/         |
 |    Sphinx style https://example.com/          |                                           |
 +-----------------------------------------------+-------------------------------------------+
