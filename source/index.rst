@@ -32,7 +32,7 @@ Contents:
    files
    extras/index
    summary
-
+   myst/index
 
 Tutorial
 --------

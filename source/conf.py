@@ -30,7 +30,8 @@ author = 'Iker Reyes'
 extensions = [
     'sphinx.ext.todo',
     'IPython.sphinxext.ipython_directive',
-    'IPython.sphinxext.ipython_console_highlighting'
+    'IPython.sphinxext.ipython_console_highlighting',
+    'myst_parser'
 ]
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
@@ -74,3 +75,20 @@ intersphinx_mapping = {'https://docs.python.org/': None}
 rst_prolog = """
 .. |rst| replace:: ``.rst``
 """
+
+
+myst_enable_extensions = [
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "fieldlist",
+    "html_admonition",
+    "html_image",
+    "replacements",
+    "smartquotes",
+    "strikethrough",
+    "substitution",
+    "tasklist",
+]
+
+myst_dmath_double_inline = True
